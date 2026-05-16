@@ -1,0 +1,281 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 1.5rem 4rem;
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(oklch(0.26 0.01 260 / 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.26 0.01 260 / 0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
+}
+
+.glowOrb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: oklch(0.72 0.19 160 / 0.08);
+  filter: blur(120px);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.glowOrb2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: oklch(0.55 0.15 250 / 0.06);
+  filter: blur(100px);
+  bottom: -50px;
+  left: -100px;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: oklch(0.72 0.19 160 / 0.1);
+  border: 1px solid oklch(0.72 0.19 160 / 0.2);
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: oklch(0.72 0.19 160);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: oklch(0.72 0.19 160);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: oklch(0.95 0.005 260);
+  margin-bottom: 1.5rem;
+}
+
+.headingAccent {
+  color: oklch(0.72 0.19 160);
+  font-style: italic;
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: oklch(0.65 0.01 260);
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: oklch(0.72 0.19 160);
+  color: oklch(0.13 0.005 260);
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.primaryBtn:hover {
+  background: oklch(0.78 0.19 160);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px oklch(0.72 0.19 160 / 0.3);
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: oklch(0.88 0.005 260);
+  border: 1px solid oklch(0.26 0.01 260);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.secondaryBtn:hover {
+  border-color: oklch(0.72 0.19 160 / 0.5);
+  color: oklch(0.72 0.19 160);
+}
+
+.imageWrapper {
+  flex: 0 0 400px;
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  width: 380px;
+  height: 460px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 2px solid oklch(0.26 0.01 260);
+}
+
+.imageFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageGlow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, oklch(0.72 0.19 160 / 0.3), transparent 50%, oklch(0.55 0.15 250 / 0.2));
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.floatingCard {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -2rem;
+  padding: 1rem 1.5rem;
+  background: oklch(0.17 0.008 260 / 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid oklch(0.26 0.01 260);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.floatingIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.75rem;
+  background: oklch(0.72 0.19 160 / 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: oklch(0.72 0.19 160);
+}
+
+.floatingText {
+  display: flex;
+  flex-direction: column;
+}
+
+.floatingLabel {
+  font-size: 0.75rem;
+  color: oklch(0.55 0.01 260);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.floatingValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: oklch(0.95 0.005 260);
+}
+
+@media (max-width: 968px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2.75rem;
+  }
+
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imageWrapper {
+    flex: none;
+  }
+
+  .imageFrame {
+    width: 300px;
+    height: 360px;
+  }
+
+  .floatingCard {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2.25rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

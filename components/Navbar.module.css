@@ -1,0 +1,144 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+  padding: 1.25rem 0;
+}
+
+.navScrolled {
+  background: oklch(0.13 0.005 260 / 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid oklch(0.26 0.01 260 / 0.5);
+  padding: 0.75rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: oklch(0.95 0.005 260);
+  text-decoration: none;
+}
+
+.logoAccent {
+  color: oklch(0.72 0.19 160);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: oklch(0.65 0.01 260);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: oklch(0.72 0.19 160);
+}
+
+.cta {
+  padding: 0.625rem 1.5rem;
+  background: oklch(0.72 0.19 160);
+  color: oklch(0.13 0.005 260);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: oklch(0.78 0.19 160);
+  transform: translateY(-1px);
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: oklch(0.95 0.005 260);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: oklch(0.13 0.005 260 / 0.98);
+  backdrop-filter: blur(20px);
+  z-index: 40;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobileMenuOpen {
+  display: flex;
+}
+
+.mobileLink {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: oklch(0.88 0.005 260);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobileLink:hover {
+  color: oklch(0.72 0.19 160);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: oklch(0.95 0.005 260);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+}
