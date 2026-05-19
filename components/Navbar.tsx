@@ -39,7 +39,7 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a href="#contact" className={styles.cta}>
+              <a href="https://wa.me/2347088996255" className={styles.cta} target="_blank" rel="noopener noreferrer">
                 Book a Session
               </a>
             </li>

@@ -1,6 +1,6 @@
 .footer {
   padding: 3rem 1.5rem;
-  border-top: 1px solid oklch(0.22 0.01 260);
+  border-top: 1px solid rgb(24, 27, 31);
 }
 
 .container {
@@ -21,17 +21,17 @@
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 700;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   text-decoration: none;
 }
 
 .logoAccent {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .copyright {
   font-size: 0.8rem;
-  color: oklch(0.45 0.01 260);
+  color: rgb(82, 85, 91);
 }
 
 .links {
@@ -42,13 +42,13 @@
 
 .link {
   font-size: 0.85rem;
-  color: oklch(0.5 0.01 260);
+  color: rgb(96, 99, 105);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .socials {
@@ -61,18 +61,18 @@
   width: 36px;
   height: 36px;
   border-radius: 0.5rem;
-  background: oklch(0.2 0.01 260);
+  background: rgb(19, 22, 27);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: oklch(0.6 0.01 260);
+  color: rgb(125, 128, 134);
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .social:hover {
-  background: oklch(0.72 0.19 160 / 0.15);
-  color: oklch(0.72 0.19 160);
+  background: rgba(0, 199, 122, 0.15);
+  color: rgb(0, 199, 122);
 }
 
 @media (max-width: 768px) {

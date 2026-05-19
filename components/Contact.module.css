@@ -30,7 +30,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
   margin-bottom: 1rem;
 }
 
@@ -38,20 +38,20 @@
   font-family: var(--font-serif);
   font-size: 3rem;
   font-weight: 700;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   margin-bottom: 1.25rem;
   line-height: 1.15;
 }
 
 .headingAccent {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
   font-style: italic;
 }
 
 .description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: oklch(0.6 0.01 260);
+  color: rgb(125, 128, 134);
   margin-bottom: 2.5rem;
 }
 
@@ -71,10 +71,10 @@
 .input {
   flex: 1;
   padding: 0.875rem 1rem;
-  background: oklch(0.17 0.008 260);
-  border: 1px solid oklch(0.26 0.01 260);
+  background: rgb(13, 16, 19);
+  border: 1px solid rgb(33, 36, 41);
   border-radius: 0.75rem;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   font-size: 0.95rem;
   transition: border-color 0.2s ease;
   outline: none;
@@ -82,20 +82,20 @@
 }
 
 .input::placeholder {
-  color: oklch(0.45 0.01 260);
+  color: rgb(82, 85, 91);
 }
 
 .input:focus {
-  border-color: oklch(0.72 0.19 160 / 0.5);
+  border-color: rgba(0, 199, 122, 0.5);
 }
 
 .select {
   flex: 1;
   padding: 0.875rem 1rem;
   background: oklch(0.17 0.008 260);
-  border: 1px solid oklch(0.26 0.01 260);
+  border: 1px solid rgb(33, 36, 41);
   border-radius: 0.75rem;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   font-size: 0.95rem;
   transition: border-color 0.2s ease;
   outline: none;
@@ -107,15 +107,15 @@
 }
 
 .select:focus {
-  border-color: oklch(0.72 0.19 160 / 0.5);
+  border-color: rgba(0, 199, 122, 0.5);
 }
 
 .textarea {
   padding: 0.875rem 1rem;
-  background: oklch(0.17 0.008 260);
-  border: 1px solid oklch(0.26 0.01 260);
+  background: rgb(13, 16, 19);
+  border: 1px solid rgb(33, 36, 41);
   border-radius: 0.75rem;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   font-size: 0.95rem;
   transition: border-color 0.2s ease;
   outline: none;
@@ -125,17 +125,17 @@
 }
 
 .textarea::placeholder {
-  color: oklch(0.45 0.01 260);
+  color: rgb(82, 85, 91);
 }
 
 .textarea:focus {
-  border-color: oklch(0.72 0.19 160 / 0.5);
+  border-color: rgba(0, 199, 122, 0.5);
 }
 
 .submitBtn {
   padding: 1rem 2rem;
-  background: oklch(0.72 0.19 160);
-  color: oklch(0.13 0.005 260);
+  background: rgb(0, 199, 122);
+  color: rgb(6, 7, 9);
   border: none;
   border-radius: 0.75rem;
   font-size: 1rem;
@@ -149,9 +149,9 @@
 }
 
 .submitBtn:hover {
-  background: oklch(0.78 0.19 160);
+  background: rgb(0, 219, 140);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px oklch(0.72 0.19 160 / 0.3);
+  box-shadow: 0 8px 30px rgba(0, 199, 122, 0.3);
 }
 
 .trust {
@@ -167,11 +167,11 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.8rem;
-  color: oklch(0.5 0.01 260);
+  color: rgb(96, 99, 105);
 }
 
 .trustIcon {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 @media (max-width: 480px) {
