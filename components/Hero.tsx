@@ -31,8 +31,8 @@ export default function Hero() {
           </h1>
 
           <p className={styles.description}>
-            Personalised online tutoring for IGCSE, GCSE, SAT and A-Level
-            Mathematics. I break down complex concepts into clear, intuitive
+            Personalised online tutoring for IGCSE, GCSE, SAT, A-Level and Secondary
+            School Mathematics. I break down complex concepts into clear, intuitive
             steps so every student builds genuine confidence.
           </p>
 
@@ -57,12 +57,13 @@ export default function Hero() {
           <div className={styles.imageGlow} />
           <div className={styles.imageFrame}>
             <Image
-              src="/images/tutor-portrait.jpg"
+              src="/images/Img2.jpeg"
               alt="Mathematics tutor portrait"
               width={380}
               height={460}
               priority
             />
+            <p className={styles.name}>PEEKAY</p>           
           </div>
           <div className={styles.floatingCard}>
             <div className={styles.floatingIcon}>

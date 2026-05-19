@@ -1,6 +1,6 @@
 .section {
   padding: 6rem 1.5rem;
-  background: oklch(0.11 0.005 260);
+  background: rgb(4, 4, 6);
 }
 
 .container {
@@ -18,7 +18,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
   margin-bottom: 1rem;
 }
 
@@ -26,7 +26,7 @@
   font-family: var(--font-serif);
   font-size: 2.75rem;
   font-weight: 700;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
@@ -40,7 +40,7 @@
 .card {
   padding: 2rem;
   background: oklch(0.15 0.008 260);
-  border: 1px solid oklch(0.24 0.01 260);
+  border: 1px solid rgb(28, 31, 36);
   border-radius: 1rem;
   transition: all 0.3s ease;
   display: flex;
@@ -48,7 +48,7 @@
 }
 
 .card:hover {
-  border-color: oklch(0.72 0.19 160 / 0.2);
+  border-color: rgba(0, 199, 122, 0.2);
   transform: translateY(-2px);
 }
 
@@ -56,13 +56,13 @@
   display: flex;
   gap: 0.25rem;
   margin-bottom: 1.25rem;
-  color: oklch(0.8 0.18 90);
+  color: rgb(235, 182, 0);
 }
 
 .quote {
   font-size: 1rem;
   line-height: 1.75;
-  color: oklch(0.78 0.005 260);
+  color: rgb(181, 183, 186);
   font-style: italic;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -73,7 +73,7 @@
   align-items: center;
   gap: 0.75rem;
   padding-top: 1.25rem;
-  border-top: 1px solid oklch(0.24 0.01 260);
+  border-top: 1px solid rgb(28, 31, 36);
 }
 
 .avatar {
@@ -90,32 +90,32 @@
 
 .avatar1 {
   background: oklch(0.72 0.19 160 / 0.15);
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .avatar2 {
   background: oklch(0.65 0.15 210 / 0.15);
-  color: oklch(0.65 0.15 210);
+  color: rgb(0, 166, 193);
 }
 
 .avatar3 {
-  background: oklch(0.75 0.15 60 / 0.15);
-  color: oklch(0.75 0.15 60);
+  background: rgba(242, 148, 60, 0.15);
+  color: rgb(242, 148, 60);
 }
 
 .avatar4 {
-  background: oklch(0.65 0.15 300 / 0.15);
-  color: oklch(0.65 0.15 300);
+  background: rgba(158, 119, 220, 0.15);
+  color: rgb(158, 119, 220);
 }
 
 .avatar5 {
-  background: oklch(0.7 0.15 30 / 0.15);
-  color: oklch(0.7 0.15 30);
+  background: rgba(237, 118, 100, 0.15);
+  color: rgb(237, 118, 100);
 }
 
 .avatar6 {
-  background: oklch(0.6 0.15 180 / 0.15);
-  color: oklch(0.6 0.15 180);
+  background: rgba(0, 156, 132, 0.15);
+  color: rgb(0, 156, 132);
 }
 
 .authorInfo {
@@ -126,12 +126,12 @@
 .authorName {
   font-size: 0.9rem;
   font-weight: 600;
-  color: oklch(0.92 0.005 260);
+  color: rgb(227, 229, 232);
 }
 
 .authorDetail {
   font-size: 0.8rem;
-  color: oklch(0.5 0.01 260);
+  color: rgb(96, 99, 105);
 }
 
 @media (max-width: 768px) {

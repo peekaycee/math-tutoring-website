@@ -10,9 +10,9 @@
 
 .navScrolled {
   background: oklch(0.13 0.005 260 / 0.85);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid oklch(0.26 0.01 260 / 0.5);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(33, 36, 41, 0.5);
   padding: 0.75rem 0;
 }
 
@@ -28,16 +28,15 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 700;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   text-decoration: none;
 }
 
 .logoAccent {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .links {
@@ -52,7 +51,7 @@
 .link {
   font-size: 0.875rem;
   font-weight: 500;
-  color: oklch(0.65 0.01 260);
+  color: rgb(140, 143, 149);
   text-decoration: none;
   transition: color 0.2s ease;
   letter-spacing: 0.025em;
@@ -60,13 +59,13 @@
 }
 
 .link:hover {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .cta {
   padding: 0.625rem 1.5rem;
-  background: oklch(0.72 0.19 160);
-  color: oklch(0.13 0.005 260);
+  background: rgb(0, 199, 122);
+  color: rgb(6, 7, 9);
   border: none;
   border-radius: 0.5rem;
   font-size: 0.875rem;
@@ -85,7 +84,7 @@
   display: none;
   background: none;
   border: none;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -98,6 +97,7 @@
   right: 0;
   bottom: 0;
   background: oklch(0.13 0.005 260 / 0.98);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   z-index: 40;
   flex-direction: column;
@@ -113,13 +113,13 @@
 .mobileLink {
   font-size: 1.5rem;
   font-weight: 500;
-  color: oklch(0.88 0.005 260);
+  color: rgb(213, 215, 219);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .mobileLink:hover {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .closeBtn {
@@ -128,7 +128,7 @@
   right: 1.5rem;
   background: none;
   border: none;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   cursor: pointer;
   padding: 0.5rem;
 }

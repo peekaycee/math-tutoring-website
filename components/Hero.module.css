@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,8 +15,8 @@
     linear-gradient(oklch(0.26 0.01 260 / 0.3) 1px, transparent 1px),
     linear-gradient(90deg, oklch(0.26 0.01 260 / 0.3) 1px, transparent 1px);
   background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 80%);
 }
 
 .glowOrb {
@@ -63,11 +64,11 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: oklch(0.72 0.19 160 / 0.1);
-  border: 1px solid oklch(0.72 0.19 160 / 0.2);
+  border: 1px solid rgba(0, 199, 122, 0.2);
   border-radius: 2rem;
   font-size: 0.8rem;
   font-weight: 600;
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 1.5rem;
@@ -91,19 +92,19 @@
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
   margin-bottom: 1.5rem;
 }
 
 .headingAccent {
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
   font-style: italic;
 }
 
 .description {
   font-size: 1.15rem;
   line-height: 1.7;
-  color: oklch(0.65 0.01 260);
+  color: rgb(140, 143, 149);
   max-width: 520px;
   margin-bottom: 2.5rem;
 }
@@ -120,7 +121,7 @@
   gap: 0.5rem;
   padding: 1rem 2rem;
   background: oklch(0.72 0.19 160);
-  color: oklch(0.13 0.005 260);
+  color: rgb(6, 7, 9);
   border: none;
   border-radius: 0.75rem;
   font-size: 1rem;
@@ -142,8 +143,8 @@
   gap: 0.5rem;
   padding: 1rem 2rem;
   background: transparent;
-  color: oklch(0.88 0.005 260);
-  border: 1px solid oklch(0.26 0.01 260);
+  color: rgb(213, 215, 219);
+  border: 1px solid rgb(33, 36, 41);
   border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 500;
@@ -153,8 +154,8 @@
 }
 
 .secondaryBtn:hover {
-  border-color: oklch(0.72 0.19 160 / 0.5);
-  color: oklch(0.72 0.19 160);
+  border-color: rgba(0, 199, 122, 0.5);
+  color: rgb(0, 199, 122);
 }
 
 .imageWrapper {
@@ -168,8 +169,18 @@
   height: 460px;
   border-radius: 1.5rem;
   overflow: hidden;
-  border: 2px solid oklch(0.26 0.01 260);
+  border: 2px solid rgb(33, 36, 41);
 }
+/* .name{
+  position: absolute;
+  bottom: -3rem;
+  right: 1.5rem;
+  color: rgb(0, 199, 122);
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 600;
+  z-index: 1;
+} */
 
 .imageFrame img {
   width: 100%;
@@ -192,8 +203,9 @@
   left: -2rem;
   padding: 1rem 1.5rem;
   background: oklch(0.17 0.008 260 / 0.95);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid oklch(0.26 0.01 260);
+  border: 1px solid rgb(33, 36, 41);
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -208,7 +220,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: oklch(0.72 0.19 160);
+  color: rgb(0, 199, 122);
 }
 
 .floatingText {
@@ -218,7 +230,7 @@
 
 .floatingLabel {
   font-size: 0.75rem;
-  color: oklch(0.55 0.01 260);
+  color: rgb(110, 114, 120);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -226,7 +238,7 @@
 .floatingValue {
   font-size: 1.25rem;
   font-weight: 700;
-  color: oklch(0.95 0.005 260);
+  color: rgb(236, 239, 242);
 }
 
 @media (max-width: 968px) {
@@ -257,7 +269,7 @@
     width: 300px;
     height: 360px;
   }
-
+  
   .floatingCard {
     left: 50%;
     transform: translateX(-50%);
