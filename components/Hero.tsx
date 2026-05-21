@@ -63,7 +63,7 @@ export default function Hero() {
               height={460}
               priority
             />
-            <p className={styles.name}>PEEKAY</p>           
+            <p className={styles.name}>Kalu</p>           
           </div>
           <div className={styles.floatingCard}>
             <div className={styles.floatingIcon}>
