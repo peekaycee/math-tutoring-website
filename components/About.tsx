@@ -12,9 +12,9 @@ const highlights = [
 ];
 
 const stats = [
-  { number: "500+", label: "Students tutored across 20+ countries" },
-  { number: "98%", label: "Achieved target grade or higher" },
-  { number: "8+", label: "Years of teaching experience" },
+  { number: "100+", label: "Students tutored across 5+ countries" },
+  { number: "85%", label: "Achieved target grade or higher" },
+  { number: "9+", label: "Years of teaching experience" },
   { number: "4.9", label: "Average rating from students" },
 ];
 
