@@ -139,6 +139,35 @@
   font-weight: 500;
 }
 
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #b8f3e6, #84d9ff);
+  color: #0f0f1f;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.ctaLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(184, 243, 230, 0.3);
+}
+
+.ctaLink:active {
+  transform: translateY(-1px);
+}
+
 @media (max-width: 968px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);

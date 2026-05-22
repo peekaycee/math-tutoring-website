@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import styles from "./Subjects.module.css";
 
 const subjects = [
@@ -79,6 +80,19 @@ export default function Subjects() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className={styles.ctaContainer}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <a href="/plans" className={styles.ctaLink}>
+            Find the Perfect Plan for You
+            <ArrowRight size={18} />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

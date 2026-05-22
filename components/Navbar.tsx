@@ -7,6 +7,7 @@ import styles from "./Navbar.module.css";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#subjects", label: "Subjects" },
+  { href: "/plans", label: "Plans", external: true },
   { href: "#videos", label: "Videos" },
   { href: "#testimonials", label: "Results" },
   { href: "#contact", label: "Contact" },
@@ -39,8 +40,8 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a href="#contact" className={styles.cta}>
-                Book a Session
+              <a href="/plans" className={styles.cta}>
+                View Plans
               </a>
             </li>
           </ul>
@@ -76,11 +77,11 @@ export default function Navbar() {
           </a>
         ))}
         <a
-          href="#contact"
+          href="/plans"
           className={styles.cta}
           onClick={() => setMobileOpen(false)}
         >
-          Book a Session
+          View Plans
         </a>
       </div>
     </>

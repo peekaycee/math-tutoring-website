@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle, Users, Award, BookOpen, TrendingUp } from "lucide-react";
+import { CheckCircle, Users, Award, BookOpen, TrendingUp, ArrowRight } from "lucide-react";
 import styles from "./About.module.css";
 
 const highlights = [
@@ -63,6 +63,18 @@ export default function About() {
                 </motion.div>
               ))}
             </div>
+
+            <motion.a
+              href="/plans"
+              className={styles.ctaButton}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              View Our Plans
+              <ArrowRight size={16} />
+            </motion.a>
           </div>
 
           <div className={styles.statsCol}>
