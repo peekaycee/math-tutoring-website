@@ -5,11 +5,12 @@ import { Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#subjects", label: "Subjects" },
-  { href: "#videos", label: "Videos" },
-  { href: "#testimonials", label: "Results" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#subjects", label: "Exams" },
+  // { href: "/plans", label: "Plans", external: true },
+  { href: "/#videos", label: "Videos" },
+  { href: "/#testimonials", label: "Results" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -26,7 +27,7 @@ export default function Navbar() {
     <>
       <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ""}`}>
         <div className={styles.container}>
-          <a href="#" className={styles.logo}>
+          <a href="/" className={styles.logo}>
             Math<span className={styles.logoAccent}>Mentor</span>
           </a>
 
@@ -38,9 +39,12 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
+            <li className={styles.ctaContainer}>
+              <a href="/plans" className={styles.cta}>
+                View Plans
+              </a>
               <a href="https://wa.me/2347088996255" className={styles.cta} target="_blank" rel="noopener noreferrer">
-                Book a Session
+                Chat with me
               </a>
             </li>
           </ul>
@@ -81,6 +85,13 @@ export default function Navbar() {
           onClick={() => setMobileOpen(false)}
         >
           Book a Session
+        </a>
+        <a
+          href="/plans"
+          className={styles.cta}
+          onClick={() => setMobileOpen(false)}
+        >
+          View Plans
         </a>
       </div>
     </>

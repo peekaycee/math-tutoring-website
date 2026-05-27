@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Linkedin, Youtube, MessageCircle } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -15,32 +15,47 @@ export default function Footer() {
         </div>
 
         <nav className={styles.links}>
-          <a href="#about" className={styles.link}>About</a>
-          <a href="#subjects" className={styles.link}>Subjects</a>
-          <a href="#videos" className={styles.link}>Videos</a>
-          <a href="#testimonials" className={styles.link}>Results</a>
-          <a href="#contact" className={styles.link}>Contact</a>
+          <a href="/#about" className={styles.link}>About</a>
+          <a href="/#subjects" className={styles.link}>Exams</a>
+          <a href="/#videos" className={styles.link}>Videos</a>
+          <a href="/#testimonials" className={styles.link}>Results</a>
+          <a href="/#contact" className={styles.link}>Contact</a>
         </nav>
 
         <div className={styles.socials}>
           <a
-            href="#"
+            href="https://wa.me/2347088996255"
             className={styles.social}
-            aria-label="Email"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Mail size={16} />
+            <MessageCircle size={16} />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/mathmentor"
+            className={styles.social}
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook size={16} />
+          </a>
+          <a
+            href="https://www.linkedin.com/school/mathmentor/"
             className={styles.social}
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Linkedin size={16} />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/c/MathMentor"
             className={styles.social}
             aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Youtube size={16} />
           </a>

@@ -30,7 +30,7 @@ const subjects = [
     icon: "AL",
     iconClass: "iconAlevel",
     desc: "In-depth A-Level coverage across Pure Maths, Statistics and Mechanics modules for all major UK exam boards.",
-    topics: ["Calculus", "Mechanics", "Statistics", "Further Pure", "Proof"],
+    topics: ["Calculus", "Mechanics", "Statistics", "Complex Numbers", "Proof"],
   },
 ];
 
@@ -45,7 +45,7 @@ export default function Subjects() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className={styles.label}>Subjects</p>
+          <p className={styles.label}>Examinations</p>
           <h2 className={styles.heading}>Every exam, every syllabus.</h2>
           <p className={styles.subheading}>
             Tailored preparation for the world&apos;s most recognised mathematics

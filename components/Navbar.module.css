@@ -133,6 +133,13 @@
   padding: 0.5rem;
 }
 
+.ctaContainer{
+ gap: 12px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 @media (max-width: 768px) {
   .links {
     display: none;
