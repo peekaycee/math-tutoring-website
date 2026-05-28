@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 
@@ -16,12 +16,36 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const toggleRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    const target = event.target as Node;
+
+    if (
+      mobileOpen &&
+      menuRef.current &&
+      !menuRef.current.contains(target) &&
+      toggleRef.current &&
+      !toggleRef.current.contains(target)
+    ) {
+      setMobileOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [mobileOpen]);
 
   return (
     <>
@@ -50,25 +74,20 @@ export default function Navbar() {
           </ul>
 
           <button
+            ref={toggleRef}
             className={styles.mobileToggle}
-            onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
+            onClick={() => setMobileOpen((prev) => !prev)}
+            aria-label="Toggle menu"
           >
-            <Menu size={24} />
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </nav>
 
       <div
+        ref={menuRef}
         className={`${styles.mobileMenu} ${mobileOpen ? styles.mobileMenuOpen : ""}`}
       >
-        <button
-          className={styles.closeBtn}
-          onClick={() => setMobileOpen(false)}
-          aria-label="Close menu"
-        >
-          <X size={28} />
-        </button>
         {navLinks.map((link) => (
           <a
             key={link.href}
