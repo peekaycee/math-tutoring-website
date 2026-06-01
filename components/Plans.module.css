@@ -220,6 +220,10 @@
 .ctaBtn {
   background: oklch(0.72 0.19 160);
   color: rgb(6, 7, 9);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: all .2s ease;
 }
 
 .ctaBtn:hover {
@@ -236,6 +240,7 @@
   background: transparent;
   color: rgb(213, 215, 219);
   border: 1.5px solid rgb(33, 36, 41);
+  transition: all .2s ease;
 }
 
 .secondaryBtn:hover {
@@ -250,6 +255,12 @@
   border: 1.5px solid rgba(0, 199, 122, 0.4);
   padding: 10px 20px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  transition: all .2s ease;
 }
 
 .sendPlanBtn:hover {
